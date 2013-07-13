@@ -29,7 +29,7 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    height: 270px;
+    height: 275px;
     background: #fff;
 }
 
@@ -43,34 +43,27 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
 }
 
 .week {
-}
-
-.week-number {
-    font-size: 10px;
-    margin-top: 5px;
+    display: block;
 }
 
 .weekend {
     color: #999;
 }
 
-.day-title {
-    width: 12.5%;
-    float: left;
-    text-align: center;
-    font-weight: 400;
-    font-size: 12px;
-    padding: 10px 0;
-    background: #eee;
-}
 .day {
-    width: 12.5%;
+    width: 13%;
     float: left;
     text-align: center;
     padding: 5px 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.day-title {
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px 0;
+    background: #eee;
 }
 .today {
     background: #ffa000;
@@ -79,6 +72,17 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
     border-radius: 5px;
     color: white;
 }
+.week-number {
+    font-size: 12px;
+    margin-top: 4px;
+    width: 9%;
+}
+.week-number.day-title {
+    margin: 0;
+}
+.day-title-row {
+    background: #eee;
+}
 
 .copyright {
     text-align: center;
@@ -86,7 +90,6 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
     padding: 20px;
     background: #eee;
 }
-
 .copyright a {
     color: #000;
     text-decoration: none;

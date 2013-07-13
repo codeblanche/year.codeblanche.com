@@ -156,7 +156,7 @@ class Calendar
 
         $result .= '<div class="month">';
         $result .= '<div class="month-title">' . $data['name'] . '</div>';
-        $result .= '<div><div class="day-title"> &nbsp; </div>';
+        $result .= '<div class="week day-title-row"><div class="day day-title week-number"> &nbsp; </div>';
 
         foreach ($this->weekBase as $dow => $null) {
             $weekend = '';
@@ -165,9 +165,10 @@ class Calendar
                 $weekend = 'weekend';
             }
 
-            $result .= '<div class="day-title ' . $weekend . '">' . substr($dow, 0, 1) . '</div>';
+            $result .= '<div class="day day-title ' . $weekend . '">' . substr($dow, 0, 1) . '</div>';
         }
 
+        $result .= '<div class="cl"></div>';
         $result .= '</div>';
 
         foreach ($data['week'] as $week => $weekData) {
