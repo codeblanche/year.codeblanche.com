@@ -1,0 +1,97 @@
+
+html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
+body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; background: #eee; }
+
+.main {
+    min-width: 700px;
+    height: 100%;
+}
+
+.cl {
+    float: none;
+    clear: both;
+}
+
+.year {
+    font-size: 36px;
+    color: #fff;
+    background: #999;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.month {
+    width: 25%;
+    float: left;
+    border-right: 1px solid #999;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 270px;
+    background: #fff;
+}
+
+.month-title {
+    color: #fff;
+    background: #bbb;
+    padding: 10px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.week {
+}
+
+.week-number {
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.weekend {
+    color: #999;
+}
+
+.day-title {
+    width: 12.5%;
+    float: left;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    padding: 10px 0;
+    background: #eee;
+}
+.day {
+    width: 12.5%;
+    float: left;
+    text-align: center;
+    padding: 5px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.today {
+    background: #ffa000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 11px;
+    padding: 20px;
+    background: #eee;
+}
+
+.copyright a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 400;
+}
+.copyright a:hover {
+    color: #3d82e1;
+}
