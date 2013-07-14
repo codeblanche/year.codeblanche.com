@@ -282,7 +282,7 @@ $cal = new Calendar();
             setTimeout(scrollToToday, 20);
         }
 
-        if (window.scrollY === 0) {
+        if (window.scrollY === 0 && main.offsetHeight > document.body.offsetHeight) {
             scrollToToday();
         }
     }, 1000);
