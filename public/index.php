@@ -267,22 +267,24 @@ $cal = new Calendar();
             return;
         }
 
+        var clientHeight   = document.documentElement.clientHeight;
         var todayOffsetTop = today.offsetTop;
-        var targetScrollY  = todayOffsetTop - document.body.offsetHeight / 2;
+        var targetScrollY  = todayOffsetTop - (clientHeight / 2);
 
         function scrollToToday() {
-            var move = Math.max((targetScrollY - window.scrollY) * speed, 1);
+            var current = window.scrollY;
+            var move    = Math.max((targetScrollY - current) * speed, 1);
 
             window.scrollBy(0, move);
 
-            if (move === 1) {
+            if (move === 1 || window.scrollY === current) {
                 return;
             }
 
             setTimeout(scrollToToday, 20);
         }
 
-        if (window.scrollY === 0 && main.offsetHeight > document.body.offsetHeight) {
+        if (window.scrollY === 0) {
             scrollToToday();
         }
     }, 1000);
