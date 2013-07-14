@@ -236,6 +236,7 @@ $cal = new Calendar();
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <link rel="icon" href="http://codeblanche.com/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="http://codeblanche.com/favicon.ico" type="image/x-icon" />
     <title><?= $cal->getYear(); ?>></title>
