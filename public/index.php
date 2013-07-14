@@ -229,7 +229,6 @@ class Calendar
 $cal = new Calendar();
 
 ?>
-
 <!doctype html>
 <html lang="en-US">
 <head>
