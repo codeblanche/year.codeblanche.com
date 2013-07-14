@@ -1,7 +1,5 @@
 <?php
 
-ini_set('xdebug.var_display_max_depth', 10);
-
 class Calendar
 {
     const DAY_INTERVAL = 86400;
@@ -259,6 +257,36 @@ $cal = new Calendar();
 <div class="copyright">Powered by <a href="http://codeblanche.com" target="_blank">CodeBlanche</a> &copy; 2013</div>
 </div>
 </body>
+<script type=text/javascript>
+    setTimeout(function () {
+        var today = document.getElementsByClassName('today')[0];
+        var main  = document.getElementsByClassName('main')[0];
+        var speed = 0.3;
+
+        if (typeof main === 'undefined' || typeof today === 'undefined') {
+            return;
+        }
+
+        var todayOffsetTop = today.offsetTop;
+        var targetScrollY  = todayOffsetTop - document.body.offsetHeight / 2;
+
+        function scrollToToday() {
+            var move = Math.max((targetScrollY - window.scrollY) * speed, 1);
+
+            window.scrollBy(0, move);
+
+            if (move === 1) {
+                return;
+            }
+
+            setTimeout(scrollToToday, 20);
+        }
+
+        if (window.scrollY === 0 && main.offsetHeight > document.body.offsetHeight) {
+            scrollToToday();
+        }
+    }, 1000);
+</script>
 </html>
 
 

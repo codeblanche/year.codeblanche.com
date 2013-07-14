@@ -98,25 +98,15 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
     color: #3d82e1;
 }
 
-
 @media only screen
-and (max-width : 320px) {
-    .month {
-        width: 100%;
-    }
-}
-
-@media only screen
-and (min-width : 321px)
-and (max-width : 600px) {
+and (min-width : 321px) {
     .month {
         width: 50%;
     }
 }
 
 @media only screen
-and (min-width : 601px)
-and (max-width : 800px) {
+and (min-width : 601px) {
     .month {
         width: 33.333333%;
     }
@@ -126,6 +116,13 @@ and (max-width : 800px) {
 and (min-width : 801px) {
     .month {
         width: 25%;
+    }
+}
+
+@media only screen
+and (max-width : 320px) {
+    .month {
+        width: 100%;
     }
 }
 
