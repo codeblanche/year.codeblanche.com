@@ -3,7 +3,6 @@ html, body { height: 100%; width: 100%; margin: 0; padding: 0; }
 body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; background: #eee; }
 
 .main {
-    min-width: 700px;
     height: 100%;
 }
 
@@ -51,7 +50,7 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
 }
 
 .day {
-    width: 13%;
+    width: 12%;
     float: left;
     text-align: center;
     padding: 5px 0;
@@ -75,7 +74,7 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
 .week-number {
     font-size: 12px;
     margin-top: 4px;
-    width: 9%;
+    width: 15%;
 }
 .week-number.day-title {
     margin: 0;
@@ -97,4 +96,54 @@ body { font-family: 'Open Sans', sans-serif; font-weight: 300; font-size: 16px; 
 }
 .copyright a:hover {
     color: #3d82e1;
+}
+
+
+@media only screen
+and (max-width : 320px) {
+    .month {
+        width: 100%;
+    }
+}
+
+@media only screen
+and (min-width : 321px)
+and (max-width : 600px) {
+    .month {
+        width: 50%;
+    }
+}
+
+@media only screen
+and (min-width : 601px)
+and (max-width : 800px) {
+    .month {
+        width: 33.333333%;
+    }
+}
+
+@media only screen
+and (min-width : 801px) {
+    .month {
+        width: 25%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    .month {
+        width: 33.33333%;
+    }
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+    .month {
+        width: 100%;
+    }
 }
